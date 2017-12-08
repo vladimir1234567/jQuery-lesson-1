@@ -1,0 +1,68 @@
+html,
+body {
+  margin: 0;
+  padding: 30px;
+}
+body {
+  position: relative;
+  background: pink;
+  p {
+    margin: 8px;
+    font-size: 16px;
+  }
+  .selected {
+    color: blue;
+  }
+  .highlight {
+    background: yellow;
+  }
+}
+.wrap {
+  width: 500px;
+  height: 200px;
+  background: gray;
+}
+.test-class {
+  border : 2px solid blue;
+}
+.wrap-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  border: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  height: 100vh;
+}
+.popup {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 30%;
+  left: 40%;
+  background: white;
+}
+.list {
+  li {
+    border-bottom: 3px solid black;
+  }
+  margin: 20px;
+}
+.list p {
+  display: none;
+}
+.blue-btn {
+  background: blue;
+  color: #fff;
+}
+.green-btn {
+  background: green;
+  color: #fff;
+}
+.red-btn {
+  background: red;
+  color: #fff;
+}
+
+
