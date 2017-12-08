@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery-1</title>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+<body>
+<a href="index.html" class="portal">PORTAL</a>
+<form action="/">
+    <fieldset>
+        <legend>Коротко о себе</legend>
+        <ul class="about">
+            <li>
+                <label>
+                    Имя: <input type="text" name="first-name">
+                </label>
+            </li>
+            <li>
+                <label>
+                    Фамилия: <input type="text" name="second-name">
+                </label>
+            </li>
+            <li>
+                Пол:
+                <label>
+                    <input type="radio" name="sex" value="male" checked> мужской
+                </label>
+                <label>
+                    <input type="radio" name="sex" value="female"> женский
+                </label>
+            </li>
+            <li>
+                <label>
+                    Возраст: <input type="text" name="age" class="age" pattern="[0-9]{,3}"> лет
+                </label>
+            </li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>Подробнее о себе</legend>
+        <ul class="details">
+            <li>
+                <label>
+                    <input type="radio" name="young" value="man" checked> Молодой человек
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="young" value="woman"> Девушка
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="text" name="birthday"> Дата рождения
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="text" name="family"> Семейное положение
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="text" name="soc-status"> Социальный статус
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="text" name="location"> Место жительства
+                </label>
+            </li>
+        </ul>
+        <p>Что вы обычно делаете на выходных?</p>
+        <ul class="weekend">
+            <li>
+                <label>
+                    <input type="checkbox" name="sleep"> Сплю
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="walk"> Гуляю с друзьями
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="fishing"> Хожу на рыбалку
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="games"> Играю в игры
+                </label>
+            </li>
+        </ul>
+        <p>Рассказать о формах в книге, посаященной HTML</p>
+        <select name="book-story" id="story" class="story">
+            <option value="site frequency">site frequency</option>
+            <option value="action">action</option>
+            <option value="autocomplete">autocomplete</option>
+            <option value="enctype">enctype</option>
+        </select>
+        <p>Сколько книг вы прочитали за свою жизнь?</p>
+        <ul>
+            <li><label><input type="radio" name="number" value="ten"> 0-10</label></li>
+            <li><label><input type="radio" name="number" value="twenty"> 11-20</label></li>
+            <li><label><input type="radio" name="number" value="fifty"> 21-50</label></li>
+            <li><label><input type="radio" name="number" value="fifty-plus"> 50+</label></li>
+        </ul>
+        <ul>
+            <li><label for="comment"><span>Ваши комментарии</span></label></li>
+            <li><textarea name="comments" id="comment" cols="80" rows="20"></textarea></li>
+        </ul>
+        <select name="positions" id="position" class="position" multiple size="3" autofocus>
+            <option value="1">Первая позиция</option>
+            <option value="2" selected>Вторая позиция</option>
+            <option value="3">Третья позиция</option>
+            <option value="4">Четвертая позиция</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>И в заключение</legend>
+        <ul class="mail">
+            <li><input type="text" id="filed" placeholder="Это поле было заполнено до вас"></li>
+            <li><label for="e-mail"><span>E-mail:</span></label></li>
+            <li><input type="email" id="e-mail"></li>
+        </ul>
+        <p class="spam">Хотите подписаться на самую модную рассылку спама?</p>
+        <span><i>Выберите категории</i></span>
+        <ul class="category">
+            <li><label><input type="checkbox" name="equipment"> Оборудование</label></li>
+            <li><label><input type="checkbox" name="cooking"> Как приготовить обеды</label></li>
+            <li><label><input type="checkbox" name="earn"> Как заработать миллион за два дня!</label></li>
+        </ul>
+        <p>На сколько сложная задача?</p>
+        <ul>
+            <li><label><input type="radio" name="task" value="no" checked> Совсем нет</label></li>
+            <li><label><input type="radio" name="task" value="medium"> Так себе</label></li>
+            <li><label><input type="radio" name="task" value="hard"> Еле справились</label></li>
+        </ul>
+    </fieldset>
+    <input type="submit" value="Отправить">
+</form>
+
+
+
+
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
+
+
+
+
+</body>
+</html>
